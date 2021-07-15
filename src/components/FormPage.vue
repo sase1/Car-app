@@ -47,7 +47,7 @@
           </div>
         </div>
         
-        <div class="form-group">
+        <div class="form-group" >
           <label>Vehicle License Number*:</label>
           <input 
           type="text" 
@@ -55,10 +55,10 @@
           v-model="vehicleLicenseNumber" 
           placeholder="AA-1111-BB"
           v-bind:class="{ 'is-valid': validation.valid.vehicleLicenseNumber, 'is-invalid': validation.invalid.vehicleLicenseNumber }" 
-            v-on:focus="clearValidation('vehicleLicenseNumber')"/> 
+          v-on:focus="clearValidation('vehicleLicenseNumber')"/>
+          </div>
            <div class="valid-feedback" v-if="validation.valid.vehicleLicenseNumber">{{ validation.valid.vehicleLicenseNumber }}</div>
            <div class="invalid-feedback" v-if="validation.invalid.vehicleLicenseNumber">{{ validation.invalid.vehicleLicenseNumber }}</div>
-        </div>
 
         <button 
         type="submit" 
